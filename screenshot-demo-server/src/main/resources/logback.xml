@@ -9,7 +9,7 @@
   <logger name="org.eclipse.jetty" level="INFO" />
   <logger name="org.springframework" level="INFO" />
   <logger name="org.thymeleaf" level="INFO" />
-  <root level="TRACE">
+  <root level="INFO">
     <appender-ref ref="STDOUT" />
   </root>
 </configuration>
