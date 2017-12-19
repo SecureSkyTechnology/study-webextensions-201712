@@ -185,7 +185,7 @@
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                   <manifestEntries>
-                    <Main-Class>com.sst.devtools.alterproxy.App</Main-Class>
+                    <Main-Class>com.secureskytech.scdemosrv.App</Main-Class>
                     <X-Compile-Source-JDK>${java.version.source}</X-Compile-Source-JDK>
                     <X-Compile-Target-JDK>${java.version.target}</X-Compile-Target-JDK>
                     <Specification-Title>${project.name}</Specification-Title>
