@@ -1,0 +1,56 @@
+{
+  "name": "screenshot-demo-extension",
+  "version": "1.0.0",
+  "description": "WebExtensions API tabs.captureVisibleTab() demo",
+  "repository": "https://github.com/SecureSkyTechnology/study-webextensions-201712.git",
+  "scripts": {
+    "lint": "standard src/**/*.js",
+    "build": "webpack --config webpack.config.js",
+    "clean": "rm -rf dist/{chrome,firefox,common,edge}/* build/*",
+    "clean:more": "npm-run-all clean:dist clean:build",
+    "clean:dist": "rm -rf dist",
+    "clean:build": "rm -rf build",
+    "start": "node publish.js",
+    "pack": "npm-run-all clean build pack:*",
+    "pack:chrome": "crx pack -p build/key.pem -o build/we-exercise2.crx --zip-output build/we-exercise2.chrome.zip dist/chrome",
+    "pack:firefox": "web-ext build -s dist/firefox -a build --overwrite-dest",
+    "pack:msedge": "echo \"sorry, msedge packaging is not supported yet. this is TODO.\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "standard": {
+    "global": [
+      "chrome",
+      "saveToClipboard",
+      "Headers",
+      "fetch",
+      "location",
+      "window",
+      "document",
+      "screen",
+      "MouseEvent",
+      "KeyboardEvent"
+    ]
+  },
+  "author": "sakamoto@securesky-tech.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.2.3",
+    "crx": "^3.2.1",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.1.2",
+    "on-build-webpack": "^0.1.0",
+    "standard": "^10.0.3",
+    "web-ext": "^2.2.2",
+    "webpack": "^3.10.0",
+    "wemf": "^1.2.1"
+  },
+  "dependencies": {
+    "bowser": "^1.8.1",
+    "chrome-browser-object-polyfill": "^0.2.2",
+    "then-chrome": "^1.0.7"
+  }
+}
