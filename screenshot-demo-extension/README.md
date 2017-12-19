@@ -2,6 +2,8 @@
 
 - WebExtensions の `tabs.captureVisibleTab()` APIを使ったスクリーンショット(画面キャプチャ)のサンプルです。
 - browser action の click イベントで、現在のタブの画面キャプチャを取得し、アドレスバーのURLと一緒に screenshot-demo-server にアップロードします。
+  - アップロードした回数を badge text でカウントアップ表示します。
+  - アップロードに失敗した場合、badge の背景色を赤にして異常を示します。
 - デフォルトと異なるアドレスで screenshot-demo-server を実行する場合は、option page でアップロード先URLを変更してください。
 
 ## ビルド, Lint, パッケージング
