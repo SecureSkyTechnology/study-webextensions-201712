@@ -2,13 +2,16 @@
 
 2017年12月にWebExtensionsの作り方を勉強したときのサンプルコードや調査メモです。
 
+本READMEではローカルのWebExtensionsのインストールやデバッグ方法、動作検証環境についてまとめています。
+サンプルコード個別のビルド方法や説明については、それぞれのREADMEを参照してください。
+
 サンプルコードの構成:
 - we-exercise1
-  - browserActionでpopupを表示させるだけの動作確認用です。
+  - browser actionでpopupを表示させるだけの動作確認用です。
 - we-exercise2
-  - browserAction, background page, option page などを連携させるサンプルです。
+  - browser action, background page, option page などを連携させるサンプルです。
 - screenshot-demo-extension
-  - browserActionで現在アクティブなタブの画面スクリーンショットを取得し、screenshot-demo-serverに送信するサンプルです。
+  - browser actionで現在アクティブなタブの画面スクリーンショットを取得し、screenshot-demo-serverに送信するサンプルです。
 - screenshot-demo-server
   - Nettyで作ったローカルHTTPプロキシで、SpringによるWebUIを組み込んでいます。
   - screenshot-demo-extension から送信されたスクリーンショットを、HTTP通信ログに紐付け、WebUI上に表示します。
@@ -110,7 +113,3 @@ Chrome: https://developer.chrome.com/extensions/tut_debugging
 
 Edge: https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/debugging-extensions
 - background page / content script / popup page それぞれでDeveloper Toolsを開いてデバッグできる。
-
-
-
-
