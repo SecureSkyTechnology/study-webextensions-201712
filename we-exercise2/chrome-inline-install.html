@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>we-exercise2 Inline Installation</title>
+    <link rel="chrome-webstore-item" href="http://127.0.0.1:3000/updates/we-exercise2.crx">
+    <!--
+        Inline Installation: https://developer.chrome.com/webstore/inline_installation
+        日本語参考記事
+        https://qiita.com/komasshu/items/f70984b3ecc985e916f3
+        https://blog.hika69.com/blog/2016/05/27/chrome-extension-inline-install/
+        Web Master Toolへの登録が必要など、結論として、local web serverからの配布・インストールは非常に難しい。
+        エンタープライズ向けに、Chromeの master_preference やWindwosレジストリを弄る方法もあるが、そこまでは検証しきれなかった。
+        https://support.google.com/chrome/a/answer/188453
+        http://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist
+        https://support.google.com/chrome_webstore/answer/2664769 > "Install an extension from another website"
+        http://www.chromium.org/administrators/policy-list-3#ExtensionInstallSources
+    -->
+    <!--
+    <link rel="chrome-webstore-item" href="(Google Drive上のURLも試してみたが駄目。そもそも2017年現在、Google DriveのWeb Hosting機能が無効化されてるので、auto updateまで考慮するとどちらにせよ使えない・・・)">
+    -->
+</head>
+  <body>
+    <button onclick="chrome.webstore.install()" id="install-button">Add to Chrome</button>
+    <script>
+    if (chrome.app.isInstalled) {
+        document.getElementById('install-button').style.display = 'none';
+    }
+    </script>
+  </body>
+</html>

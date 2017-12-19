@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>we-exercise2 bundled web page (another setting page)</title>
+  </head>
+  <body>
+    <h2>we-exercise2 bundled web page (another setting page)</h2>
+    <form>
+      リクエストヘッダーを独自に追加する対象のURL Matcher:<br>
+      <input type="text" name="customHeaderMatch" size="300"><br>
+      see : <a href="https://developer.chrome.com/extensions/match_patterns" target="_blank">https://developer.chrome.com/extensions/match_patterns</a> or <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/permissions#Host_permissions" target="_blank">https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/permissions#Host_permissions</a><br>
+      <br>
+      独自に追加するリクエストヘッダー名:<br>
+      <input type="text" name="customHeaderName" size="200"><br>
+      <br>
+      Content scriptでHTMLレスポンスのbodyタグの直後に挿入するHTMLコンテンツ:<br>
+      <input type="text" name="insertHTML" size="200"><br>
+      (Firefoxでは原因不明の謎の現象で、なぜかcontent scriptsからstorage/runtime.sendMessage() APIが正常に呼び出せなかったため、chromeのみの対応とします。)
+      <br>
+      <button type="submit">save</button>&nbsp;&nbsp;<button type="reset">reset</button>
+    </form>
+    <br>
+    ※最新の情報に更新するには、一旦閉じて開き直してください。
+
+    <script src="settings.js"></script>
+  </body>
+</html>
