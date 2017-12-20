@@ -151,6 +151,13 @@ public class MyHttpFiltersImpl extends HttpFiltersAdapter {
                 return LFSMapper.createMappedResponse(map, path);
             }
         }
+        if (HttpMethod.CONNECT.equals(method)) {
+            /* HTTPS プロキシやWebSocketで使われるCONNECTメソッドについては、
+             * アプリケーションデータではなくトランスポートの世界の取り決めなので、
+             * ログ保存する必要が無いため、ここでreturnしておく。
+             */
+            return null;
+        }
         if (Objects.isNull(this.ctx)) {
             // for unit test (TODO : この辺の上手なmock技法が無いか調査)
             return null;
