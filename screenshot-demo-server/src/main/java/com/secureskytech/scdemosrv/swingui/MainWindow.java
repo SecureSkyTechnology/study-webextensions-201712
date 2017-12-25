@@ -36,7 +36,7 @@ public class MainWindow {
      */
     private void initialize(final AppContext appContext) throws IOException {
         frame = new JFrame();
-        frame.setTitle("alter-proxy");
+        frame.setTitle("screenshot-demo-server");
         frame.setBounds(100, 100, 800, 600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(new BorderLayout(0, 0));
