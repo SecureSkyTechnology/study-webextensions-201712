@@ -119,3 +119,12 @@ C:\Program Files (x86)\Google\Chrome\Application>chrome --user-data-dir=C:\work\
 
 Edge: https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/debugging-extensions
 - background page / content script / popup page それぞれでDeveloper Toolsを開いてデバッグできる。
+
+----
+調査・サンプルコード作成・検証した人 : 坂本 昌彦 (研究開発部所属, 社内で使用するWebアプリケーション診断ツールの開発などに従事)
+* Mail : sakamoto@securesky-tech.com
+* Twitter : https://twitter.com/msakamoto_sf
+* Facebook: https://www.facebook.com/masahiko.sakamoto.75
+* GitHub : https://github.com/msakamoto-sf
+
+本資料・サンプルコードに関するご意見・お問い合わせは坂本までお願いします。
