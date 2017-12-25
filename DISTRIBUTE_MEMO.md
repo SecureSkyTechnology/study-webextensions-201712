@@ -17,6 +17,7 @@
 前提:
 - 対象組織では G Suite を導入済み。
 - WebExtensions としては Chrome拡張 と Firefox Addon を対象とする。(Edgeについては対象外)
+- 2017年12月時点の調査結果なので、将来の Chrome Web Store, Firefox AMO の改善により機能や挙動が変わる可能性があります。
 
 ## 公式ドキュメント参考
 

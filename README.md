@@ -21,6 +21,8 @@
   - Windows環境でNode.jsからjsonをrequire()した時に、エラーが発生したパターンがあったので検証に用いたサンプルです。
 - `TIPS_TROUBLES_MEMO.md`
   - 今回の調査・検証で困ったところ・嵌ったところのメモなど。
+- `DISTRIBUTE_MEMO.md`
+  - イントラ向けのWebExtensionsの配布方法の調査・検証メモ。
 
 ## 動作検証環境
 
