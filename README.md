@@ -111,5 +111,11 @@ Chrome: https://developer.chrome.com/extensions/tut_debugging
 - browserActionに対応してる = アドレスバーの右にアイコンが表示されるタイプの拡張なら、アイコンを右クリックして「ポップアップを検証」をクリックするとその拡張用のDeveloper Toolsが表示される。
 - バックグラウンドページを利用している拡張なら、 `chrome://extensions/` の拡張一覧で「ビューを検証：バックグラウンドページ」リンクが表示されるので、リンクをクリックするとその拡張用のDeveloper Toolsが表示される。
 
+※Chromeの場合、`--user-data-dir` オプションでユーザデータのディレクトリを任意の場所に指定できる。これを使って、Storeからインストールした拡張パッケージがどう展開されたか、普段使いのユーザデータとは分離して確認することができる。(未検証)
+```
+cd C:\Program Files (x86)\Google\Chrome\Application
+C:\Program Files (x86)\Google\Chrome\Application>chrome --user-data-dir=C:\work\chrome-extension\test-user-data-dir
+```
+
 Edge: https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/debugging-extensions
 - background page / content script / popup page それぞれでDeveloper Toolsを開いてデバッグできる。
