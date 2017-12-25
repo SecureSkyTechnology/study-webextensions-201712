@@ -6,19 +6,21 @@
 サンプルコード個別のビルド方法や説明については、それぞれのREADMEを参照してください。
 
 サンプルコードの構成:
-- we-exercise1
+- `we-exercise1`
   - browser actionでpopupを表示させるだけの動作確認用です。
-- we-exercise2
+- `we-exercise2`
   - browser action, background page, option page などを連携させるサンプルです。
-- screenshot-demo-extension
+- `screenshot-demo-extension`
   - browser actionで現在アクティブなタブの画面スクリーンショットを取得し、screenshot-demo-serverに送信するサンプルです。
-- screenshot-demo-server
+- `screenshot-demo-server`
   - Nettyで作ったローカルHTTPプロキシで、SpringによるWebUIを組み込んでいます。
   - screenshot-demo-extension から送信されたスクリーンショットを、HTTP通信ログに紐付け、WebUI上に表示します。
-- child_process_args_problem
+- `child_process_args_problem`
   - Windows環境でNode.jsから子プロセスを起動する場合に、引数がどのように渡るか検証したサンプルです。
-- require_json_problem
+- `require_json_problem`
   - Windows環境でNode.jsからjsonをrequire()した時に、エラーが発生したパターンがあったので検証に用いたサンプルです。
+- `TIPS_TROUBLES_MEMO.md`
+  - 今回の調査・検証で困ったところ・嵌ったところのメモなど。
 
 ## 動作検証環境
 
